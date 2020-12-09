@@ -4,10 +4,20 @@
 // e con il while.
 
 let somma = 0;
-
-for (let index = 0; index < 5; index++) {
-    const numeroUtente =  Number(prompt("Insert a number"));
-    somma += numeroUtente;
+//ciclo for
+// for (let index = 0; index < 5; index++) {
+//     const numeroUtente =  Number(prompt("Insert a number"));
+//     somma += numeroUtente;
     
-}
+// };
+// console.log(somma);
+
+//ciclo while
+let index = 0;
+while (index < 5){
+    const numeroUtente = Number(prompt("insert a number"));
+    somma += numeroUtente;
+    index++;
+};
+
 console.log(somma);
