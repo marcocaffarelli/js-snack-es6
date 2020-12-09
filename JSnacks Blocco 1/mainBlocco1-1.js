@@ -15,5 +15,5 @@ if (numeroUno  > numeroDue) {
     console.log(`Il numero maggiore è il secondo numero inserito cioè il numero ${numeroDue}`);
 } else {
     console.log("I due numeri inseriti sono uguali");
-}
+};
 
