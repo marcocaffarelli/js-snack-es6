@@ -58,26 +58,14 @@ let pesoCorte = 0;
 //var del peso zucchine lunghe che deve partire da zero
 let pesoLunghe = 0;
 
-///////////////////////////// CICLO FOR /////////////////////////////
-//ciclo for per sommare i pesi delle zucchine corte
-for(let i = 0; i < listaZucchineCorte.length; i++){  
-    pesoCorte = pesoCorte + listaZucchineCorte[i].peso;
-}
-console.log(`Peso delle zucchine sotto i 15cm: ${pesoCorte}kg`);
-//ciclo for per sommare i pesi delle zucchine lunghe
-for(let y = 0; y < listaZucchineLunghe.length; y++){  
-    pesoLunghe = pesoLunghe + listaZucchineLunghe[y].peso;
-}
-console.log(`Peso delle zucchine sopra i 15cm: ${pesoLunghe}kg`);
-
 //Creata un arrow function per sommare i pesi
 const somma = (peso, lista) => {
     for(let i = 0; i < lista.length; i++){  
         peso = peso + lista[i].peso;
     }
-    return (peso/2)
+    return peso
 };  
 
-console.log(somma(pesoCorte, listaZucchineCorte));
-console.log(somma(pesoLunghe, listaZucchineLunghe));
+console.log(`La somma dei pesi delle zucchine sotto i 15cm è uguale a: ${somma(pesoCorte, listaZucchineCorte)}kg`);
+console.log(`La somma dei pesi delle zucchine sopra i 15cm è uguale a: ${somma(pesoLunghe, listaZucchineLunghe)}kg`);
 
