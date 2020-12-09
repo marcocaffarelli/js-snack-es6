@@ -18,4 +18,4 @@ if (ctrlNumeroPrimo(numeroUtente) == true) {
     console.log(`${numeroUtente} è un numero primo`);
 }else{
     console.log(`${numeroUtente} non è un numero primo`);
-}
+};
