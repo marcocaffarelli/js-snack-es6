@@ -3,5 +3,5 @@
 
 //funzione che inverte il testo
 
-const ritornoGirato = (stringa) => stringa.split("").reverse().join("");  
+const ritornoGirato = stringa => stringa.split("").reverse().join("");  
 console.log(ritornoGirato("ciao"))
