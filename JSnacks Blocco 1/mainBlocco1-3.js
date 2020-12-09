@@ -6,7 +6,7 @@
 let somma = 0;
 //ciclo for
 // for (let index = 0; index < 5; index++) {
-//     const numeroUtente =  Number(prompt("Insert a number"));
+//     const numeroUtente =  Number(prompt("Inserisci un numero"));
 //     somma += numeroUtente;
     
 // };
@@ -15,7 +15,7 @@ let somma = 0;
 //ciclo while
 let index = 0;
 while (index < 5){
-    const numeroUtente = Number(prompt("insert a number"));
+    const numeroUtente = Number(prompt("inserisci un numero"));
     somma += numeroUtente;
     index++;
 };
